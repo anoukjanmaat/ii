@@ -2,39 +2,43 @@
 /* CSS REMEDY */
 /**************/
 
+/* font face */
+@font-face {
+  font-family: Ninja-Turtels;
+  src: url(../fonts/Turtles-zOzL.ttf);
+}
+
 /* naar een idee van Jen Simmons */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body {
-  margin:0;
+  margin: 0;
+
+
 }
 
 button:not([disabled]) {
-  cursor:pointer;
+  cursor: pointer;
+
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 
 :root {
-  --color-headings:crimson
-  /* ... */
+  --color-headings: crimson
+    /* ... */
 
 }
-
-
-
 
 
 /********************/
@@ -42,9 +46,11 @@ img {
 /********************/
 
 h1 {
-  color:var(--color-headings);
+  font-family: 'Ninja-Turtels';
+  font-weight: 100;
+  text-align: center;
+  font-size: 4em;
+  color: var(--color-headings);
 }
 
 /* ... */
-
-
