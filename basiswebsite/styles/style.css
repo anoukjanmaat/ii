@@ -1,0 +1,117 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+/* font face */
+@font-face {
+  font-family: Ninja-Turtels;
+  src: url(../fonts/Turtles-zOzL.ttf);
+}
+
+@font-face {
+  font-family: bananasFont;
+  src: url(../fonts/BananasFont-ZV7gz.ttf);
+}
+
+
+@font-face {
+  font-family: italicBananasFont;
+  src: url(../fonts/BananasFontItalic-EaLy8.ttf);
+}
+/* naar een idee van Jen Simmons */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+
+}
+
+button:not([disabled]) 
+  body {
+    cursor: url('pizza'), 
+}
+
+img {
+  max-width: 100%;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+  --color-headings: rgb(255, 255, 255);;
+
+}
+
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+
+p{
+  font-family: helvetica;
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  font-family: 'bananasFont';
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 1,5em;
+}
+
+h2 {
+  font-family: 'bananasFont';
+  color: rgb(143, 90, 59);
+  font-weight: 100;
+  font-size: 1,5em;
+} 
+
+h1 {
+  font-family: 'Ninja-Turtels';
+  color: var(--color-headings);
+  font-weight: 100;
+  text-align: center;
+  font-size: 5em;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+section {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(143, 90, 59);
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 85%;
+  display: grid;
+}
+
+
+article:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+article:nth-of-type(2) {
+padding: 1em;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: rgb(217, 217, 217);
+}
