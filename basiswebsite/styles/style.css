@@ -27,14 +27,13 @@
 
 body {
   margin: 0;
-
-
+  cursor: url('../images/juisteSnijder.png'), auto;
 }
 
-button:not([disabled]) 
+/* button:not([disabled]) 
   body {
     cursor: url('pizza'), 
-}
+} */
 
 img {
   max-width: 100%;
@@ -55,7 +54,7 @@ img {
 /********************/
 
 
-p{
+p {
   font-family: helvetica;
   color: rgb(0, 0, 0);
 }
