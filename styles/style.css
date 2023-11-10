@@ -25,9 +25,13 @@
   box-sizing: border-box;
 }
 
+html, html * {
+  cursor: url("../images/lepel.png") 50 50, auto;
+}
+
 body {
   margin: 0;
-  cursor: url(../images/pizzaSnijder.png), auto;
+  
 }
 
 img {
@@ -70,7 +74,7 @@ button {
 
 p {
   font-family: helvetica;
-  color: var(--color-headings);
+  /* color: var(--color-headings); */
 }
 
 h3 {
